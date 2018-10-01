@@ -1,0 +1,20 @@
+.row-1 {
+    display: flex;
+    align-items:center;
+    margin: 10vh 1.5rem;
+}
+
+.row-2 {
+    display: flex;
+    justify-content: center;
+    margin: 10vh 1.5rem;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+.jumbotron-1 {
+    border: 2px solid #000;
+    padding-left: 25vw;
+}
