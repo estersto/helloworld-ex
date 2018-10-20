@@ -1,0 +1,27 @@
+<script>
+	var pulaLinha=function(){
+		document.write("<br>");
+		};
+	var mostra=function(frase) { 
+		document.write(frase)
+		pulaLinha();
+		};
+	var calculaIMC=function(altura,peso) {
+		var imc=peso/(altura*altura);
+		return imc;
+	}
+
+	var pesoDoPrimo=75
+	var alturaDoPrimo=1.72
+	var imcDoPrimo=calculaIMC(alturaDoPrimo,pesoDoPrimo);
+
+	mostra("O IMC do meu primo é "+Math.round(imcDoPrimo));
+	mostra("Ele ainda está "+Math.round((imcDoPrimo-18.5))+" pontos acima do limite da magreza");
+	mostra("Meu primo está "+Math.round((imcDoPrimo-35))+"da obesidade severa");
+
+	var	peso=81
+	var altura=1.57
+	var imc=calculaIMC(altura, peso);
+	mostra("Meu IMC é "+Math.round(imc));
+	mostra("Meu IMC é"+Math.round(calculaIMC(altura,peso)));
+</script>
