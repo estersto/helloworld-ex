@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<script>
+	var	pulaLinha=function(){
+		document.write("<br>");
+	};
+	
+	var mostra=function(frase){
+		document.write(frase);
+		pulaLinha();
+	};
+
+	var vitorias=parseInt(prompt("Quantos jogos o time venceu?"));
+	var empates=parseInt(prompt("Quantos jogos o time empatou?"));
+	var pontos=(vitorias*3)+empates;
+	mostra("O time tem "+pontos+" pontos!");
+
+	if(pontos>28){
+		mostra("O time está indo MELHOR que o outro")
+	}
+	if (pontos<28){
+		mostra("O time está indo PIOR que o outro");
+	}
+	if (pontos==28) {
+		mostra("O time está EMPATADO com o outro");
+	}
+</script>

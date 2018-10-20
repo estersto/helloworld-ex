@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<script>
+	var	pulaLinha=function(){
+		document.write("<br>");
+	};
+	
+	var mostra=function(frase){
+		document.write(frase);
+		pulaLinha();
+	};
+
+	function calculaPontos (vitorias,empates){
+		return (vitorias*3)+empates;
+	}
+
+	var vitoriasA=parseInt(prompt("Quantos jogos o time A venceu?"));
+	var empatesA=parseInt(prompt("Quantos jogos o time A empatou?"));
+	var pontosA=(vitoriasA*3)+empatesA;
+	mostra("O time A tem "+pontosA+" pontos!");
+
+	var vitoriasB=parseInt(prompt("Quantos jogos o time B venceu?"));
+	var empatesB=parseInt(prompt("Quantos jogos o time B empatou?"));
+	var pontosB=(vitoriasB*3)+empatesB;
+	mostra("O time B tem "+pontosB+" pontos!");
+
+	if(pontos>28){
+		mostra("O time está indo MELHOR que o outro")
+	}
+	if (pontos<28){
+		mostra("O time está indo PIOR que o outro");
+	}
+	if (pontos==28) {
+		mostra("O time está EMPATADO com o outro");
+	}
+</script>

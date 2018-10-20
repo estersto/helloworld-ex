@@ -1,0 +1,25 @@
+<script>
+	var mostra=function(frase) { 
+		document.write(frase)
+		pulaLinha();
+		};
+	var peso=75
+	var altura=1.72
+	var imc=(peso/(altura*altura));
+	mostra("meu IMC é: "+imc.toFixed(2));
+
+	var calculaIMC=function(altura,peso){
+		var imc=peso/(altura*altura);
+		mostra("IMC calculado é "+imc);
+	}
+
+	var pesoDoPrimo=83
+	var alturaDoPrimo=1.76
+	var	imcDoPrimo= pesoDoPrimo/(alturaDoPrimo*alturaDoPrimo);
+	mostra("O IMC de meu primo é "+imc);
+
+	var pesoDoPrimo=83
+	var alturaDoPrimo=1.76
+	calculaIMC(alturaDoPrimo,pesoDoPrimo);
+
+</script>
